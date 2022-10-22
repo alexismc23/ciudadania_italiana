@@ -21,8 +21,11 @@ h1{
     text-align:right;
     transform: translatex(-140px);
     transform: translatey(100px)
-    
 }
+
+
+
+    
 
 
     
@@ -113,6 +116,7 @@ header{
 
 
 
+
 .sociales{
     height:100px;
     padding: 10px;
@@ -185,6 +189,7 @@ footer{
     margin-top: auto;
     background-image: linear-gradient(#ADDDD0,#87A2FB,#6F38C5);
 }
+
 
 .cajaoverflow{
     background-color:#6F38C5 ;
@@ -331,6 +336,7 @@ footer{
 /* NOSOTROS */
 .header__cabeza{
     background-image: linear-gradient(#6F38C5,#87A2FB,#ADDDD0);
+    
 }
 
 
