@@ -51,6 +51,8 @@ header{
     margin: top;
     position: sticky;/* hace que baje el menu  */
     top:10px
+    
+    
 }
     
  .contacto iframe{
@@ -78,32 +80,29 @@ header{
     text-decoration: none;
     color: black;
     padding: 10px;;
-   /*  display:flex; */
-   /*  text-align: center; */
+  
   
 }
 .galeria li{
-   /*  display:flex; */
+  
     font-family: sans-serif;
-  /*   text-align: center; */
+
     
    
 }
 
 .galeria li a{
     color: black;
-    /* text-align: center; */
+   
     padding: 0px;
-   /*  margin-top: 50px; */
+ 
    margin-right: 1PX;
     width: 1%;
- /*    height: 50px; */
+
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
- /* 
-    position: relative;
-    right: 60PX; */
+
 }
 
 
@@ -136,10 +135,7 @@ h3{
     text-align: center;
 }
 
-/* .index__parrafo2 h2{
-    transform: translate(-1000px);
-    font-size: 35px;
-} */
+
 
 .parrafo1{
     margin-top: 50px;
@@ -170,9 +166,7 @@ h3{
     left: 680px; 
 }
 .parrafo2{
-   /*  position: relative;
-    right:  200p x; */
-   /*  margin-top: 10px; */
+ 
     background-color:#ADDDD0 ;
     display: flex;
     padding: 20px;
@@ -264,7 +258,7 @@ footer{
 }
 .div__servicios p{
     margin-left: 50px;
-  /*   transform: translate(100px); */
+
 }
 .footer__servicios{
    padding-top: 50px;
@@ -272,13 +266,87 @@ footer{
    background-image: linear-gradient(#ADDDD0,#87A2FB,#6F38C5);
 }
 
-/* INDEX */
-/* .main__parrafo p{
-    margin-left: 50px;
-    margin-right: 50px;
+.servicios__main{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1.0fr 1.0fr ;
+    grid-template-areas: 
+    "header "
+    "main "
+    "footer";
+}
+
+.footer__servicios{
+    grid-area: footer;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+
+@media  screen and (max-width:500px) {
+    .servicios__main{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header " 
+        "main"
+        "footer";
+    }
+    .galeria{
+        text-align:center;
+        flex-direction: column;
+        
+    }
+        
+    .body__servicios{
+        background-color: #6F38C5;
+      
+       
+    }
+    .div__servicios{
+        flex-wrap: wrap;
+    }
+   .servicios__main h2{
+    text-align:start;
+    position: relative;
+    right:450px;
+    display: none;
+    
+   }
+    .header__cabeza galeria {
+        height: 100%;
+        text-align: center;
+        padding: 100px;
+        grid-area: header;
+        
+    }
+     
+      
+    .section__servicios img{
+        padding-left: 25px;
+        margin-top: 50px;
+    }
+    .footer__servicios{
+        grid-area: footer;
+    }
+        
+       
+       
+      
+}
+
+        
+        
    
     
-} */
+  
+
+
+
+
+
+
+
 
 .acompa__main h1{
     background-color: #87A2FB;
@@ -336,7 +404,7 @@ footer{
 /* NOSOTROS */
 .header__cabeza{
     background-image: linear-gradient(#6F38C5,#87A2FB,#ADDDD0);
-    
+  
 }
 
 
@@ -350,8 +418,8 @@ footer{
     background: none;
     color: #EEEEEE;
     font-size: 75px;/* tamanio del titulo */
-    
     border-style: outset;
+    
 }
 
     
